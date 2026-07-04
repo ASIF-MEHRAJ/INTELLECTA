@@ -12,5 +12,5 @@ Premium UI/UX: Designed with a clean, responsive, card-based interface featuring
 
 Tech Stack Frontend: HTML5, CSS3 (Advanced layouts, responsive design)
 
-# LIVE LINK:
+# LIVE LINK: https://intellecta-seven.vercel.app/
 
