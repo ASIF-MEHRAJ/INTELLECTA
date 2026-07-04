@@ -1,0 +1,464 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(240, 239, 239);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+
+/* NAV BAR */
+main nav{
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(79, 76, 76);
+    border-radius: 0.5rem;
+    justify-content: space-around;
+}
+main nav .box{
+    width: 100%;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+main nav .box .left{
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    margin-left: 0.5rem;
+    color: #6d51a6;
+}
+main nav .box .mid{
+    display: none;
+    gap: 3rem;
+    font-weight: 600 ;
+    position: relative;
+    margin-right: 5rem;
+}
+main nav .box .right{
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+main nav .box .right button{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color:#6d51a6;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+/* HERO SECTION */
+main .hero{
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+/* Child 1: Announcement & Highlights stack */
+main .hero .child1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main .hero .child1 .top,
+main .hero .child1 .bottom{
+    width: 100%;
+    border-radius: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(79, 76, 76);
+}
+main .hero .child1 h3{
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    margin-bottom: 0.2rem;
+}
+main .hero .child1 p{
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    color: #444;
+}
+main .hero .child1 i{
+    font-size: 2rem;
+    color: yellowgreen;
+    flex-shrink: 0;
+}
+
+/* Child 2: Side-by-side cards */
+main .hero .child2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+main .hero .child2 .left,
+main .hero .child2 .right{
+    width: 50%;
+    border: 1px solid rgb(79, 76, 76);
+    border-radius: 0.6rem;
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; 
+    gap: 1rem;
+}
+main .hero .child2 .icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+main .hero .child2 i{
+    font-size: 1.75rem;
+    color: white;
+    border: 1px solid black;
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: yellowgreen;
+}
+main .hero .child2 h3{
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+}
+main .hero .child2 p{
+    font-size: clamp(0.8rem, 3vw, 0.95rem);
+}
+main .hero .child2 button{
+    background-color: #6d51a6;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* FOOTER */
+main footer{
+    width: 100%;
+    background-color: rgb(133, 90, 173);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; 
+}
+main footer .foot{
+    min-height: 12.5rem;
+    width: 80%;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+main footer .foot .icon{
+    display: flex;
+    justify-content: center;
+}
+main footer .foot i{
+    font-size:3.8rem;
+    color: white;
+}
+main footer .foot .caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+main footer .foot .caption h3{
+    color: white;
+    font-size:clamp(1rem, 3.8vw, 1.2rem) ;
+}
+main footer .foot .caption p{
+    color: white;
+    font-size:clamp(1rem, 3vw, 1.2rem);
+    font-weight: 500;
+    text-align: center;
+}
+main footer .foot .button{
+    display: flex;
+    justify-content: center;
+}
+main footer .foot .button  button{
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    border:none;
+}
+/* EFFECTS */
+
+main nav .right button:hover,
+main .hero .child2 button:hover{
+    background-color: #553d84;
+    transform: scale(1.1);
+    transition:all 0.1s;
+}
+main footer .foot button:hover{
+    transform: scale(1.1);
+    transition:all 0.1s;
+}
+main nav .mid .links::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6d51a6;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+main nav .mid .links:hover::after{
+    transform:scale(1);
+}
+
+/* FUNTIONALITIES */
+.mobile-menu{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 95%;
+    background: white;
+    border: 1px solid #464545;
+    border-radius: 0.5rem;
+    display: none;
+    flex-direction: column;      
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+.mobile-menu p{
+    padding: .8rem;
+    cursor: pointer;
+}
+.mobile-menu.active{
+    display: flex;
+}
+.mobile-menu p:hover{
+    background-color: #e3e2e2;
+    border-radius: 1rem;
+}
+.mobile-menu hr{
+    width: 90%;
+    margin-left: 0.9rem;
+}
+/* LOGIN-PAGE */
+
+main nav .login-page{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    padding: 4rem 0;
+}
+main nav .login-page .login-box{
+    width: 70%;
+    background: linear-gradient(to bottom, #6d51a6 67%, rgb(236, 236, 236) 33%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    box-shadow:  0 0 8px 2px rgba(0, 0, 0, 0.5);
+    border:1px solid #444;
+    border-radius: 1rem;
+    gap: 1.5rem;
+}
+main nav .login-page .login-box .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: -3rem;
+}
+main nav .login-page .login-box .top form input{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid rgb(30, 30, 30);
+    color: black;
+    margin-bottom: 1rem;
+}
+main nav .login-page .login-box .top button{
+    width: fit-content;
+    font-size: 1em;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color:#553d84;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+main nav .login-page .login-box .logo img{
+    width: 4rem;
+}
+main nav .login-page .login-box .bottom p{
+      font-size: 0.6rem;
+}
+main .login-page span{
+    color: rgb(47, 89, 196);
+    cursor: pointer;
+}
+.login-page.active{
+    display: flex;
+}
+
+/* Register-page */
+
+
+main nav .register-page{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    padding: 4rem 0;
+}
+main nav .register-page  .register-box{
+    width: 70%;
+    background: linear-gradient(to bottom, #6d51a6 70%, rgb(236, 236, 236) 30%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    box-shadow:  0 0 8px 2px rgba(0, 0, 0, 0.5);
+    border:1px solid #444;
+    border-radius: 1rem;
+    gap: 1.5rem;
+}
+main nav .register-page  .register-box .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: -3rem;
+}
+main nav .register-page  .register-box .top form input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid rgb(30, 30, 30);
+    color: black;
+    margin-bottom: 1rem;
+}
+main nav .register-page  .register-box .top button{
+    width: fit-content;
+    font-size: 1em;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color:#553d84;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+main nav .register-page .register-box .logo img{
+    width: 4rem;
+}
+main .register-page span{
+    color: rgb(47, 89, 196);
+    cursor: pointer;
+}
+main nav .register-page .register-box .bottom p{
+      font-size: 0.6rem;
+}
+.register-page.active{
+    display: flex;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    main .hero{
+        height: 40%;
+        border-radius: 1rem;
+        padding: 1.8rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+    main .hero .child1{
+        min-width:100%;
+        flex-direction: row;
+    }
+    main .hero .child2{
+        min-width: 100%;
+
+    }
+    main nav{
+        border-radius: 1rem;
+        padding: 0 2rem;
+    }
+    main nav .left i{
+        display: none;
+    }
+    main nav .box .mid{
+        display: flex;
+    }
+    nav .box .mid .links{
+        width: fit-content;
+        position: relative;
+    }
+    main nav .box .right button{
+       padding: 0.5rem 1.2rem; 
+    }
+    main footer{
+        border-radius: 1rem;
+    }
+    main nav .register-page  .register-box{
+         width: 30%;
+    }
+    main nav .login-page  .login-box{
+         width: 30%;
+    }
+    main nav .login-page .login-box .bottom p{
+      font-size: 1rem;
+}
+
+}
