@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="../ASSETS/favicon.png" type="image/x-icon">
   </head>
   <body>
@@ -28,17 +29,17 @@
         <div class="box">
           <div class="left">
               <i class="ri-menu-line"></i>
-              <p>INTELLECTA</p>
+              <p data-aos="fade-down" data-aos-duration="1100">INTELLECTA</p>
           </div>
           <div class="mid">
-            <p class="links">Home</p>
-            <p class="links">About</p>
-            <p class="links">Services</p>
-            <p class="links">Team</p>
-            <p class="links">Contact</p>
+            <p data-aos="fade-down" data-aos-duration="1200" class="links">Home</p>
+            <p  data-aos="fade-down" data-aos-duration="1500" class="links">About</p>
+            <p data-aos="fade-down" data-aos-duration="2000" class="links">Services</p>
+            <p data-aos="fade-down" data-aos-duration="2500" class="links">Team</p>
+            <p data-aos="fade-down" data-aos-duration="3000" class="links">Contact</p>
           </div>
           <div class="right">
-            <button class="loginBtn">LOGIN</button>
+            <button data-aos="fade-down" data-aos-duration="1100" class="loginBtn">LOGIN</button>
           </div>
         </div>
         <div class="login-page">
@@ -131,5 +132,9 @@
       </footer>
     </main>
     <script src="../JS/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
