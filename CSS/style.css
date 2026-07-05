@@ -68,6 +68,7 @@ main nav .box .right button{
     background-color:#6d51a6;
     color: white;
     border-radius: 0.3rem;
+    cursor: pointer;
 }
 
 /* HERO SECTION */
@@ -240,7 +241,9 @@ main nav .mid .links::after{
 main nav .mid .links:hover::after{
     transform:scale(1);
 }
-
+main nav .mid .links:hover{
+    color: #3e3e3e;
+}
 /* FUNTIONALITIES */
 .mobile-menu{
     position: absolute;
